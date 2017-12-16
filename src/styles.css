@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body,html {
+    background: -webkit-linear-gradient(to right, #e73827, #f85032); 
+    background: linear-gradient(to right, #e73827, #f85032); 
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 0;
+    background-attachment: fixed;
+    margin: 0;
+}
+
