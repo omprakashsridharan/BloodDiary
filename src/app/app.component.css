@@ -1,54 +1,41 @@
-h1   {color: white;}
-.donorcard{
-    color: black;
-    margin: 20;
-    width: 100%;
-    padding: 10px 10px; overflow:auto;
-    font-family: Righteous;
-    font-size: 120%;
-    height: auto;
-    text-align: center;
-    text-transform: uppercase;
-
-}
-input[type='submit'] {
-    background-color:#fff;
-    cursor:pointer;
-    color:#000;
-    font-weight:bold;
-    margin-bottom:50px;
-    padding:20px;
-}
-
-input {
-    display:block;
-    width: 100%;
-    margin-bottom:15px;
-    padding:10px;
-    font-size:120%;
-
-    background:none;
-    border-bottom: 1px solid #414a59 !important;
-    border:0;
-    color:#fff;
-}
-
-.example-container {
+h1   {color: maroon;}
+.container-1{
     display: flex;
-    margin: auto;
-    width: 50%;
-    flex-direction: column;
-  }
-  
-  .example-container > * {
     width: 100%;
-  }
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: stretch;
+    align-self: center;
+}
 
-.center-div
-{
-    margin: auto;
-    width: 70%;
-    padding: 25px;
+.container-1 input {
+    background:#fff;
+    color: #000;
+    flex-basis: 15%;
+    
+}
+
+ul{
+    list-style-type: none
+}
+
+.container-2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+    align-self: center;
+    justify-content: center;
+}
+
+.container-2 .box{
+    color: #000;
+    flex-basis: 22%;
+    background: #fff;
+    margin: 5px;
     font-family: Righteous;
-    overflow: auto
 }

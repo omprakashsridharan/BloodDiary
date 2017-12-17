@@ -3,8 +3,7 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 body,html {
-    background: -webkit-linear-gradient(to right, #e73827, #f85032); 
-    background: linear-gradient(to right, #e73827, #f85032); 
+    background-color: #fff; 
     background-repeat: no-repeat;
     height: 100%;
     padding: 0;

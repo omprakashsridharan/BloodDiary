@@ -4,22 +4,19 @@
     Blood Diary
   </h1>
 </div>
-<div style="padding:2em;margin:auto;width:50%">
-<input type="text" [(ngModel)]="name" name="name" placeholder="Name">
-<input type="text" [(ngModel)]="phone" name="phone" placeholder="Phone">
-<input type="text" [(ngModel)]="group" name="ggroup" placeholder="group">
-<input type="submit" value="Add a donor" (click)="addDonor()">
-</div>
-<div>
-<mat-list *ngFor="let donor of donors | async" class="center-div">
-  <mat-list-item>
-      <mat-card class="donorcard">
-          <strong>{{ donor.name }}</strong><br>
-          <strong >{{ donor.group}}</strong><br>
-          {{donor.phone}}
-        </mat-card>
-    </mat-list-item>
-  </mat-list>
-</div>
-
-
+<mat-card class="container-1">
+  <input type="text" [(ngModel)]="name" name="name" placeholder="Name">
+  <input type="text" [(ngModel)]="phone" name="phone" placeholder="Phone">
+  <input type="text" [(ngModel)]="group" name="ggroup" placeholder="group">
+  <input type="submit" value="Add a donor" (click)="addDonor()">
+</mat-card>
+<ul class="container-2">
+  <li *ngFor="let donor of donors | async" class="box">
+    <mat-card>
+      <strong>{{ donor.name }}</strong>
+      <br>
+      <strong>{{ donor.group}}</strong>
+      <br> {{donor.phone}}
+    </mat-card>
+  </li>
+</ul>
