@@ -30,5 +30,8 @@ export class AppComponent implements OnInit{
 
   addDonor(){
     this.afs.collection('donors').add({'name': this.name, 'group': this.group,'phone':this.phone});
+    this.name=""
+    this.phone=null
+    this.group=""
   }
 }

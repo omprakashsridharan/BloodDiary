@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule, MatCardModule, MatListModule, MatFormFieldModule, MatSelectModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatCardModule, MatListModule, MatFormFieldModule, MatSelectModule, MatInputModule} from '@angular/material';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { FormsModule } from '@angular/forms';
@@ -27,7 +27,13 @@ var firebaseConfig = {
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatButtonModule, MatCheckboxModule,MatCardModule,MatListModule,MatFormFieldModule,MatSelectModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatCardModule,
+    MatListModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
     FormsModule

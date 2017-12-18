@@ -3,9 +3,10 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 body,html {
-    background-color: #fff; 
+    background:linear-gradient(#f80759,#bc4e9c);
     background-repeat: no-repeat;
-    height: 100%;
+    height: auto;
+    min-width: 100%;
     padding: 0;
     background-attachment: fixed;
     margin: 0;
